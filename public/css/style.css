@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
 :root {
     --header-height: 3.5rem;
-    --nav-width: 219px
+    --nav-width: 219px;
     /* Colors */
     --first-color: #6923D0;
     --first-color-light: #f4f0fa;
@@ -39,12 +39,12 @@
 
 *,
 ::before,
- ::after {
+::after {
     box-sizing: border-box;
 }
 
 body {
-    margin: var(--header-height);
+    margin: var(--header-height) 0 0 0;
     padding: 1rem 1rem 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -74,7 +74,7 @@ img {
     left: 0;
     width: 100%;
     background-color: var(--container-color);
-    box-shadow: 0 1px 0 rgba(22, 8, 43, 1);
+    box-shadow: 0 1px 0 rgba(22, 8, 43, 0.1);
     padding: 0 1rem;
     z-index: var(--z-fiexd);
 }
@@ -129,20 +129,19 @@ img {
 
 
 /* Nav */
-
-.nav {
+.nav{
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     padding: 1rem 1rem 3rem;
     background-color: var(--container-color);
-    box-shadow: 1px 0 0 rgba(22, 8, 43, 1);
+    box-shadow: 1px 0 0 rgba(22,8,43,.1);
     z-index: var(--z-fiexd);
     transition: .4s;
 }
 
-.nav__container {
+.nav__container{
     height: 100%;
     display: flex;
     flex-direction: column;
